@@ -12,7 +12,7 @@
     <div class="bg-info py-4">
         <h2 class="text-center">Login</h2>
         <div class="container text-center" >
-            <form action="" >
+            <form action="./actions/login.php" method="post" >
             <div class="mb-3">
                 <input type="text" class="form-control w-50 m-auto" name="username" placeholder="Enter your username"b required="required">
             </div>
@@ -20,7 +20,7 @@
                 <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number"b required="required" maxLength="10" minLength="10">
             </div>
             <div class="mb-3">
-                <input type="password" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your password"b required="required" maxLength="10" minLength="10">
+                <input type="password" class="form-control w-50 m-auto" name="password" placeholder="Enter your password"b required="required" maxLength="10" minLength="10">
             </div>
             <div class="mb-3">
                 <select name="std" class="form-select w-50 m-auto">
