@@ -15,7 +15,7 @@ include('connect.php');
         </script>';
     }
     else{
-        move_uploaded_file($tmp_name,"..uploads/$image");
+        move_uploaded_file($tmp_name,"../uploads/$image");
         $sql="insert into `userdata`(username,mobile,password,photo,standard,status,votes) values('$username','$mobile','$password','$image','$std',0,0)";
         $result=mysqli_query($conn,$sql);
         if($result){
