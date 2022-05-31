@@ -17,7 +17,7 @@
                 <input type="text" class="form-control w-50 m-auto" name="username" placeholder="Enter your username"b required="required">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number"b required="required" maxLength="10" minLength="10">
+                <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number"b required="required" maxLength="8" minLength="8">
             </div>
             <div class="mb-3">
                 <input type="password" class="form-control w-50 m-auto" name="password" placeholder="Enter your password"b required="required">
