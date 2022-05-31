@@ -20,10 +20,10 @@
                 <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number"b required="required" maxLength="10" minLength="10">
             </div>
             <div class="mb-3">
-                <input type="password" class="form-control w-50 m-auto" name="password" placeholder="Enter your password"b required="required" maxLength="10" minLength="10">
+                <input type="password" class="form-control w-50 m-auto" name="password" placeholder="Enter your password"b required="required">
             </div>
             <div class="mb-3">
-                <select name="std" class="form-select w-50 m-auto">
+                <select name="std" class="form-select w-50 m-auto"> 
                     <option value="group">Group</option>
                     <option value="voter">Voter</option>
                 </select>

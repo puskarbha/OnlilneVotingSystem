@@ -1,4 +1,5 @@
 <?php
+session_start(); 
 include('connect.php');
 
 $username=$_POST['username'];
@@ -9,7 +10,7 @@ $std=$_POST['std'];
 $sql="select * from `userdata` where username='$username' and mobile='$mobile' and password='$password' and standard='$std'";
 $result=mysqli_query($conn,$sql);
 if(mysqli_num_rows($result)>0){
-    $sql="select username,photo,votes,id form `userdata` where standard='group'";
+    $sql="Select username,photo,votes,id from `userdata` where standard='group'";
     $resultgroup=mysqli_query($conn,$sql);
         if(mysqli_num_rows($resultgroup)>0){
             $groups=mysqli_fetch_all($resultgroup,MYSQLI_ASSOC);
@@ -20,9 +21,8 @@ if(mysqli_num_rows($result)>0){
         $_SESSION['status']=$data['status'];
         $_SESSION['data']=$data['data'];
         echo'<script>
-   
-    window.location="../partials/dashboard.php";
-    </script>';
+        window.location="../partials/dashboard.php";
+        </script>';
     }
 else{
     echo'<script>
