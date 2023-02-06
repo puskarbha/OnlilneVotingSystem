@@ -57,7 +57,7 @@
                     <?php
                         if($_SESSION['status']==1){
                             ?>
-                    <button class="bg-success my-4 text-white px-3">Voted</button>
+                    <button class="bg-success my-4 text-white px-3" type="button">Voted</button>
                     <?php
                             }
                             else{
